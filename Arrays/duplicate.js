@@ -12,9 +12,9 @@ function duplicate(arr) {
 
   while (read < arr.length) {
     if (arr[read] !== arr[write - 1]) {
-      console.log(arr);
+      // console.log(arr);
       arr[write] = arr[read];
-      console.log(arr);
+      // console.log(arr);
       read++;
       write++;
       unique++;
