@@ -5,7 +5,7 @@ function singleNumber(arr) {
   let res = 0;
 
   for (let i = 0; i <= arr.length; i++) {
-    res = res ^ arr[i];
+    res ^= arr[i];
   }
   return res;
 }
