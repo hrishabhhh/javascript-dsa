@@ -22,6 +22,8 @@ Practicing Data Structures and Algorithms in JavaScript with a focus on problem-
 - Contains Duplicate
 - Longest Subarray With Sum K
 - Maximum Sum Subarray of Size K
+- Merge Sorted Arrays
+- Remove Duplicates from Sorted Array
 
 ### Strings
 
