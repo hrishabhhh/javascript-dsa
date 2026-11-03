@@ -12,7 +12,10 @@ function linearSearch(arr, target) {
   return -1;
 }
 
-console.log(linearSearch([1, 3, 5, 7, 9, 11], 7));
+console.log(
+  "Binary Search brute force: ",
+  linearSearch([1, 3, 5, 7, 9, 11], 7),
+);
 
 function binarySearch(arr, target, left = 0, right = arr.length - 1) {
   if (left > right) return -1;
@@ -24,3 +27,24 @@ function binarySearch(arr, target, left = 0, right = arr.length - 1) {
 }
 
 console.log("Recursive approach: ", binarySearch([1, 3, 5, 7, 9, 11], 7));
+
+function binarySearchIterative(arr, target) {
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+
+    if (arr[mid] === target) return mid;
+    if (arr[mid] < target) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+  return -1;
+}
+console.log(
+  "Iteravtive Binary Search Optimized: ",
+  binarySearchIterative([1, 3, 5, 7, 9, 11], 7),
+);
